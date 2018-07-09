@@ -7,7 +7,7 @@ class GamesController < ApplicationController
 
   def create
     @game = Game.new
-    render json: game
+    render json: @gmae
   end
   
   def show
