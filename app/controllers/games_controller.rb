@@ -1,7 +1,8 @@
 class GamesController < ApplicationController
   # Add your GamesController code here
   def index
-    render json: @posts
+    @posts = 
+    render json: @games
   end
 
   def create
