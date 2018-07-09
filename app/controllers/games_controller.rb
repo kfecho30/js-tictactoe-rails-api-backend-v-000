@@ -17,4 +17,9 @@ class GamesController < ApplicationController
 
   def update
   end
+
+  private
+  def game_params
+    params.permit(state: [])
+  end
 end
